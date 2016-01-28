@@ -56,4 +56,6 @@ an array of key-value pair. in each key-value pair, item 0 is key, item 1 is val
 
 ### args
 an array of string contains all arguments which are not option nor value of option. and all arguments after '--'.
-  
+
+# others
+can any body help me to improve my English! it is the biggest difficulty for me while coding!
