@@ -39,4 +39,15 @@ a traditional getopt library for golang.
   
 # functions
     func Getopt(tokens []string, shortopts string, longopts []string) (opts [][]string, args []string, err error)
+
+## tokens
+usually os.Args[1:], developer can also specify a different string array.
+
+## shortopts
+a traditional shortopt definition. a singal letter means this is a flag, as shown in the example '-h'. a single letter followed by a ':' means this is a option, user must specify option value while execute program, as shown in the example '-c'.
+
+## longopts
+a array of string. a option defined as --_option_name_[=]. '--' prefix is required. with '=' as suffix means this is a option, without '=' followed means this is a flag.
+
+
   
