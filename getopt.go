@@ -162,7 +162,7 @@ func Getopt(tokens []string, shortopts string, longopts []string) (opts [][]stri
             if err != nil {
                 return
             }
-        } else if strings.HasPrefix(c, "-") {
+        } else if strings.HasPrefix(c, "-") && c != "-" {
             err = DoShorts(shortoptions, c, &tokens, &opts, &args)
             if err != nil {
                 return
